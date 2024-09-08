@@ -72,7 +72,7 @@ header {
 
 .nav-right a {
     display: inline-block;
-    font-size: 22px;
+    font-size: 18px;
     color: var(--text-color);
     margin: 0 20px;
     transition: all .6s;
@@ -83,7 +83,7 @@ header {
 }
 
 #menu-icon {
-    font-size: 35px;
+    font-size: 20px;
     color: var(--text-color);
     z-index: 10001;
     margin-left: 10px;
@@ -546,9 +546,9 @@ section {
 }
 
 @media (max-width: 1050px) {
-    /* #menu-icon {
+    #menu-icon {
         display: block;
-    } */
+    }
 
     .navlist {
         position: absolute;
@@ -629,8 +629,12 @@ section {
 @media (max-width: 529px) {
     :root {
         --h1-font: 3rem;
-        --h2-font: 2rem;
+        --h2-font: 1.8rem;
         --p-font: 14px;
+    }
+
+    header {
+        padding: 10px 3%;
     }
 
     .home {
@@ -641,159 +645,88 @@ section {
         font-size: var(--h1-font);
     }
 
+    .home-text h6 {
+        font-size: 13px;
+    }
+
     .home-text p {
-        line-height: 28px;
+        font-size: var(--p-font);
     }
 
     .btn {
-        padding: 10px 16px;
-    }
-
-    .nav-right a {
-        margin-right: 5px;
-    }
-
-    header {
-        padding: 8px 3%;
-    }
-
-    section {
-        padding: 50px 3% 60px;
-    }
-
-    .brands {
-        padding: 30px 3%;
-    }
-
-    .feature {
-        padding: 8px 3% 8px;
-    }
-
-    .feature-content {
-        grid-template-columns: repeat(auto-fit, minmax(100%, auto));
-    }
-
-    .newsletter-content {
-        grid-template-columns: 1fr;
-        padding: 40px 30px;
-    }
-
-    .newsletter-text h2 {
-        font-size: 30px;
-    }
-
-    .newsletter-content form input:first-child {
-        padding: 10px;
+        padding: 10px 20px;
         font-size: 14px;
-    }
-
-    .newsletter-content form input:last-child {
-        font-size: 14px;
-    }
-
-    .selling-content {
-        grid-template-columns: repeat(auto-fit, minmax(100%, auto));
     }
 
     .navlist {
-        padding: 30px 40px;
+        padding: 30px 20px;
     }
 
     .navlist a {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .brands {
+        padding: 20px 3%;
+    }
+
+    .brands-c img {
+        max-width: 80px;
+    }
+
+    .feature-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    }
+
+    .newsletter-content {
+        padding: 40px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-text h2 {
+        font-size: 32px;
+    }
+
+    .newsletter-text p {
+        font-size: 12px;
+    }
+
+    .selling-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    .col-img img {
+        border-radius: 15px;
     }
 
     .footer {
-        grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     }
 
     .footer-box h3 {
         font-size: 18px;
     }
 
-    .footer-box a {
-        font-size: 14px;
-    }
-
-    .copyright {
-        padding: 15px 3% 15px;
-    }
-
-    .end-text p {
-        font-size: 13px;
+    .social a {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     :root {
         --h1-font: 2.5rem;
-        --h2-font: 1.8rem;
+        --h2-font: 1.5rem;
         --p-font: 12px;
     }
 
-    .home {
-        height: 75vh;
-    }
-
-    .home-text h1 {
-        font-size: var(--h1-font);
-    }
-
-    .home-text p {
-        font-size: var(--p-font);
-        line-height: 24px;
-    }
-
-    .btn {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-
-    .newsletter-content form input:first-child {
-        padding: 5px;
-        font-size: 14px;
-    }
-
-    .newsletter-content form input:last-child {
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .nav-right a {
-        margin-right: 4px;
-        font-size: 14px;
-    }
-
-    .navlist a {
-        font-size: 1.6rem;
-    }
-
-    .footer-box h3 {
-        font-size: 16px;
-    }
-
-    .footer-box a {
-        font-size: 12px;
-    }
-
-    .copyright {
-        padding: 10px 2% 10px;
-    }
-
-    .end-text p {
-        font-size: 12px;
-    }
-
-    .main-brands {
-        flex-wrap: nowrap;
-    }
-}
-
-@media (max-width: 320px) {
-    :root {
-        --h1-font: 2rem;
-        --h2-font: 1.5rem;
-        --p-font: 11px;
+    header {
+        padding: 5px 2%;
     }
 
     .home {
@@ -804,59 +737,78 @@ section {
         font-size: var(--h1-font);
     }
 
-    .home-text p {
-        color: var(--text-color);
-        font-size: var(--p-font);
-        line-height: 22px;
-    }
-
-    .btn {
-        padding: 6px 10px;
+    .home-text h6 {
         font-size: 11px;
     }
 
-    .newsletter-content form input:first-child {
-        padding: 5px;
-        font-size: 14px;
+    .home-text p {
+        font-size: var(--p-font);
     }
 
-    .newsletter-content form input:last-child {
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .newsletter-content form {
-        gap: 5px;
-    }
-
-    .nav-right a {
-        margin-right: 3px;
+    .btn {
+        padding: 8px 15px;
         font-size: 12px;
     }
 
+    .navlist {
+        padding: 20px 10px;
+    }
+
     .navlist a {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .brands {
+        padding: 15px 2%;
+    }
+
+    .brands-c img {
+        max-width: 60px;
+    }
+
+    .feature-content {
+        grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+    }
+
+    .newsletter-content {
+        padding: 30px 8px;
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-text h2 {
+        font-size: 28px;
+    }
+
+    .newsletter-text p {
+        font-size: 10px;
+    }
+
+    .selling-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    }
+
+    .col-img img {
+        border-radius: 10px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(120px, auto));
     }
 
     .footer-box h3 {
+        font-size: 16px;
+    }
+
+    .social a {
+        width: 30px;
+        height: 30px;
         font-size: 14px;
     }
-
-    .footer-box a {
-        font-size: 10px;
-    }
-
-    .copyright {
-        padding: 8px 2% 8px;
-    }
-
-    .end-text p {
-        font-size: 10px;
-    }
-
-    .main-brands {
-        flex-wrap: nowrap;
-    }
 }
+
 
 /* CSS Media Code End */
