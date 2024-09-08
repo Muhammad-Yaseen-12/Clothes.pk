@@ -678,9 +678,9 @@ section {
         max-width: 80px;
     }
 
-    .feature-content {
+    /* .feature-content {
         grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    }
+    } */
 
     .newsletter-content {
         padding: 40px 10px;
