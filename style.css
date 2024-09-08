@@ -546,9 +546,9 @@ section {
 }
 
 @media (max-width: 1050px) {
-    #menu-icon {
+    /* #menu-icon {
         display: block;
-    }
+    } */
 
     .navlist {
         position: absolute;
