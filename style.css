@@ -790,9 +790,6 @@ section {
 }
 
 @media (max-width: 320px) {
-    body {
-        margin: 0 auto;
-    }
     :root {
         --h1-font: 2rem;
         --h2-font: 1.5rem;
